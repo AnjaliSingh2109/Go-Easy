@@ -7,7 +7,7 @@
 
  //Event Listener Function on keypress
  Input.addEventListener('keypress', (event) => {
-    //  console.log(Input.value)
+     //  console.log(Input.value)
      console.log(Input.value);
      fetch(`${weatherApi.baseUrl}?q=${Input.value}&appid=${weatherApi.key}`)
          .then(city => {
@@ -40,52 +40,52 @@
  //      });
 
  //Show Weather Report
-  function showWeatherReport(wrapper) {
-      console.log(wrapper);
+ function showWeatherReport(wrapper) {
+     console.log(wrapper);
 
-      let place = document.getElementById('place');
-      place.innerText = `${weather.name},${weather.sys.country}`;
+     let place = document.getElementById('place');
+     place.innerText = `${weather.name},${weather.sys.country}`;
 
-      let temp = document.getElementById('temp');
-      city.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
+     let temp = document.getElementById('temp');
+     city.innerHTML = `${Math.round(weather.main.temp)}&deg;C`;
 
-      let MaxMin = document.getElementById('MaxMin');
-      MaxMin.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C (min)/${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
+     let MaxMin = document.getElementById('MaxMin');
+     MaxMin.innerHTML = `${Math.floor(weather.main.temp_min)}&deg;C (min)/${Math.ceil(weather.main.temp_max)}&deg;C (max)`;
 
-      let weather1 = document.getElementById('weather1');
-      weather1.innerText = `${weather.weather[0].main}`;
+     let weather1 = document.getElementById('weather1');
+     weather1.innerText = `${weather.weather[0].main}`;
 
-      let date = document.getElementById('date');
-      let todayDate = newDate();
-      date.innerText = dateManage(todayDate);
+     let date = document.getElementById('date');
+     let todayDate = newDate();
+     date.innerText = dateManage(todayDate);
 
-      if (weatherType.textContent == 'Clear') {
-          document.body.style.backgroundImage = "url('sunny.jpg')";
-      } else if (weatherType.textContent == 'Haze') {
-          document.body.style.backgroundImage = "url('haze.jpg')";
-      } else if (weatherType.textContent == 'Rain') {
-          document.body.style.backgroundImage = "url('rain.jpg')";
-      } else if (weatherType.textContent == 'Snow') {
-          document.body.style.backgroundImage = "url('snow.jpg')";
-      } else if (weatherType.textContent == 'Thunderstorm') {
-          document.body.style.backgroundImage = "url('storm.jpg')";
-      }
-  }
-  // //Date Manage
-  function dateManage(dateArg) {
+     if (weatherType.textContent == 'Clear') {
+         document.body.style.backgroundImage = "url('sunny.jpg')";
+     } else if (weatherType.textContent == 'Haze') {
+         document.body.style.backgroundImage = "url('haze.jpg')";
+     } else if (weatherType.textContent == 'Rain') {
+         document.body.style.backgroundImage = "url('rain.jpg')";
+     } else if (weatherType.textContent == 'Snow') {
+         document.body.style.backgroundImage = "url('snow.jpg')";
+     } else if (weatherType.textContent == 'Thunderstorm') {
+         document.body.style.backgroundImage = "url('storm.jpg')";
+     }
+ }
+ // //Date Manage
+ function dateManage(dateArg) {
 
-      let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+     let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-      let months = ["January", "February", "March", "June", "July", "August", "September", "October", "November", "December"];
+     let months = ["January", "February", "March", "June", "July", "August", "September", "October", "November", "December"];
 
-      let year = dateArg.getFullYear();
-      let month = [dateArg.getMonth()];
-      let date = dateArg.getDate();
-      let day = [dateArg.getDay()]
-      return `${date} ${month} $({day}), ${year}`;
+     let year = dateArg.getFullYear();
+     let month = [dateArg.getMonth()];
+     let date = dateArg.getDate();
+     let day = [dateArg.getDay()]
+     return `${date} ${month} $({day}), ${year}`;
 
 
-  }
+ }
 
  //  const cityApi = {
  //      key: "c3c66c64bc4212e3ebb058487beefa62",
