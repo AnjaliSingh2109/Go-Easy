@@ -1,0 +1,195 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    background-color: white;
+    width: 100%;
+}
+
+.container i {
+    color: black;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.container h1 {
+    color: black;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.one {
+    font-size: 25px;
+}
+
+.one a {
+    padding-left: 3px;
+    float: right;
+    color: orangered;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.one a:hover {
+    color: palevioletred;
+    text-decoration: underline;
+}
+
+.container .typewriter a {
+    margin-top: 170px;
+    padding-left: 30%;
+    text-align: center;
+    color: black;
+    padding-top: 10em;
+    text-decoration: none;
+}
+
+.wrapper {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 60%;
+    z-index: 1;
+    box-shadow: 2px 2px 5px 4px grey;
+    border-radius: 6px;
+}
+
+.wrapper:hover {
+    background-color: orangered;
+}
+
+.Input .city {
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 30px;
+    padding: 5px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 85%;
+    text-align: center;
+    margin-left: 24px;
+    border: 2px solid grey;
+}
+
+.container svg {
+    margin-top: 50px;
+    height: 550px;
+}
+
+.weather {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 60%;
+    font-size: 18px;
+    border-radius: 6px;
+    width: 88%;
+    text-align: center;
+    margin-left: 25px;
+}
+
+.container img {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 70%;
+    z-index: 1;
+}
+
+.weather {
+    padding-top: 50px;
+}
+
+.weather .place,
+.date,
+.MaxMin {
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.weather .weather1 {
+    padding-left: 5%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.weather .temp {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+.footer {
+    background-color: rgb(0, 0, 100);
+    color: white;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.footer .content {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.footer p {
+    margin-top: 5px;
+    font-size: 20px;
+    padding-left: 28px;
+    font-weight: 100;
+}
+
+.footer i {
+    margin-top: 7px;
+    padding-right: 6px;
+    display: inline;
+}
+
+.footer i p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer .line {
+    font-size: 20px;
+    font-weight: 300;
+    justify-content: center;
+    padding-bottom: 15px;
+    float: right;
+    margin-right: 25px;
+}
+
+.footer .line h3 {
+    border-bottom: 3px 15px solid white;
+}
+
+.footer .anchor {
+    margin-top: 4%;
+    margin-left: 32%;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 4px;
+    padding-left: 4px;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+    padding-left: 12px;
+}
+
+.footer a:hover {
+    color: antiquewhite;
+}
