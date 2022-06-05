@@ -6,6 +6,9 @@
 .container {
     background-color: white;
     width: 100%;
+    /* background-image: url('2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 .container i {
