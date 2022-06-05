@@ -1,0 +1,13 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.main{
+    background:url('wave.svg');
+    height:334px;
+    position:relative;
+    background-repeat: no-repeat;
+    display:block;
+    margin-top: 23%;
+    
+}
